@@ -39,6 +39,7 @@ pip install Pillow
 請輸入每幀的持續時間(毫秒)(預設100): 150
 GIF已成功創建: animation.gif
 用open -a Safari animation.gif打開
+也可使用python gif_maker_gui.py用gui操作
 ```
 
 ## 注意事項
@@ -49,7 +50,7 @@ GIF已成功創建: animation.gif
 
 ## 授權
 
-此程式採用MIT授權。
+此程式不用授權隨便使用
 
 ## 貢獻
 
