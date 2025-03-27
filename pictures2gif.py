@@ -11,6 +11,10 @@ def create_gif_from_images(image_folder, output_gif_name, duration=100):
         output_gif_name: 輸出GIF檔案名稱
         duration: 每幀的持續時間(毫秒)
     """
+    # 確保輸出檔名有.gif擴展名
+    if not output_gif_name.lower().endswith('.gif'):
+        output_gif_name += '.gif'
+        
     # 取得資料夾中所有圖片
     image_files = sorted(glob.glob(f"{image_folder}/*.jpg") + 
                          glob.glob(f"{image_folder}/*.jpeg") + 
